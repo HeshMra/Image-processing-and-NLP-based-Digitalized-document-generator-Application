@@ -1,0 +1,319 @@
+:root
+{
+    --primary-blue: #2701fc;
+    --secondary-blue: #114169;
+    --primary-purple:  #3a2956;
+}
+
+.font-link
+{
+    font-family: 'Kanit', sans-serif;
+} 
+
+/* html 
+{
+  overflow-y: hidden;
+} */
+
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero-banner {
+    position: relative;
+    min-height: 70vh;
+   
+    top: 0;
+  }
+  
+  .hero-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-banner h1 {
+    font-size: 58px;
+    color: #ffffff;
+    text-align: left;
+   
+  }
+
+  .hero-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-60deg, #4a2c9ec5, #e91ae9b4);
+    opacity: 0.8;
+  }
+  
+
+  .hero-content 
+  {
+    padding: 46px;
+    z-index: 1;
+    display:flex;
+    flex-direction: row;
+    top: 50%;
+    position: relative;
+    transform: translateY(10%);
+    justify-content: space-between;
+    
+  }
+
+  
+  .hero-content p 
+  {
+    color: #ffffff;
+    font-size: 14pt;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+
+ .hero-btn 
+ {
+    padding: 16px;
+    margin-top: 30px;
+    width: 180px;
+    font-size: 14pt;
+    color: var(--primary-blue);
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+ }
+
+ .hero-heading-text 
+ {
+  width: 50vw;
+  
+ }
+
+ .hero-side-img
+ {
+    position: relative;
+    width: 40vw;
+ }
+
+ .hero-side-img img
+ {
+    width: 100%;
+    position: absolute;
+    height: auto;
+ }
+
+
+ .signup-body
+ {
+  background-color: var(--secondary-blue);
+  /* min-height: 70vh; */
+  min-height: 70vh;
+  overflow-y: scroll;
+
+ }
+
+ .c-body
+ {
+  background-color: var(--secondary-blue);
+  /* min-height: 70vh; */
+  min-height: 70vh;
+  
+  overflow-y: scroll;
+ }
+
+.form-body
+{
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  /* background-color: #3a2956; */
+  top: 50%;
+  transform: translateY(10%);
+  text-align: center;
+
+}
+.form-body-common
+{
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  top: 50%;
+  transform: translateY(10%);
+  text-align: center;
+
+}
+
+
+.signup-form, .login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 5px;
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+input:focus {
+  outline: none;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 50%;
+  left: 50%;
+  transform: translateX(50%);
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+
+.about-info
+{
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  text-align: center;
+
+}
+
+
+.about-info ul li 
+{
+  list-style: disc !important;
+}
+
+
+ @media screen and (max-width:768px)
+ {
+  .hero-side-img
+  {
+    display: none;
+  }
+
+  .hero-banner h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: left;
+   
+  }
+
+  .info
+  {
+    font-size: 12px;
+  }
+
+  .info-panel
+ {
+  width: 100%;
+  margin: auto;
+  display: flex;
+
+
+  flex-direction: column;
+ }
+ .info-panel button 
+{
+  width: 100%;
+}
+
+.info-c-body
+{
+  top: 50%;
+  transform: translateY(0%);
+  overflow-y: hidden !important;
+}
+
+.signup-body .fa.fa-cloud-upload
+{
+  font-size: 100px;
+}
+
+}
+
+
+ @media screen and (min-width:992px)
+ {
+  .form-body-common
+  {
+    margin-top: 0;
+    transform: translateY(5%);
+  
+  }
+  
+ }
+
+
+ @media screen and (min-width:1440px)
+ {
+  /* .slider-container img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  } */
+  .content-panel img
+{
+  object-fit: cover;
+  width: 100%;
+}
+.content-panel
+{
+  width: 50%;
+}
+
+.info-panel
+ {
+  width: 50%;
+  margin: auto;
+ }
+
+
+ .about-info h3 
+ {
+  font-size: 24pt;
+ }
+ .about-info ul li 
+ {
+  font-size: 22pt;
+ }
+ }

@@ -1,0 +1,10 @@
+Signup
+Login
+StartNow
+Allow
+BrowseFile
+BackToOptionPage
+SubmitToProceed
+Skip
+Ok
+ProceedToConvert
